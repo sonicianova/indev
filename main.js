@@ -32,11 +32,13 @@ var rvar = 0;
 var direction ="";
 var running = false;
 var enter = false;
+var difficulty = "normal";
 
 //Initial function peformed when the game is loaded onto website.
 
 function load() {
 	document.getElementById("gameContainer").innerHTML = "<button type='button' id='startButton' onclick='run()'>START</button>";
+	document.getElementById("gameContainer").innerHTML = difficulty;
 }
 
 //Main functions:
@@ -69,7 +71,7 @@ function back() {
 }
 
 function options() {
-	replace("<img id='title' src='pta_title.png' /><br><br><div class='divider'></div>");
+	replace("<img id='title' src='pta_title.png' /><br><br><div class='divider'></div><p>Difficulty:</p><button class='menuButton' type='button' onclick='changeDifficulty' id='difficulty'></button><br><button class='menuButton' type='button' onclick='credits()'>CREDITS</button><button class='menuButton' type='button' onclick='back()'>BACK</button>");
 }
 
 function begin() {
