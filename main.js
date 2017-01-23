@@ -38,6 +38,7 @@ document.cookie = "name=JohnDoe";
 
 function load() {
 	document.getElementById("gameContainer").innerHTML = "<button type='button' id='startButton' onclick='run()'>START</button>";
+	getHiScore();
 }
 
 //Main functions:
