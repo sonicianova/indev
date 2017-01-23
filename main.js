@@ -32,21 +32,14 @@ var rvar = 0;
 var direction ="";
 var running = false;
 var enter = false;
-document.cookie = "name=JohnDoe";
 
 //Initial function peformed when the game is loaded onto website.
 
 function load() {
 	document.getElementById("gameContainer").innerHTML = "<button type='button' id='startButton' onclick='run()'>START</button>";
-	getHiScore();
 }
 
 //Main functions:
-
-function getHiScore() {
-	hiscore = document.cookie;
-	window.alert(hiscore);
-}
 
 function run() {
 	replace("<img id='logo' src='SoniciaNova.png' />");
