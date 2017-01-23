@@ -65,7 +65,11 @@ function credits() {
 }
 
 function back() {
-	replace("<img id='title' src='pta_title.png' /><br><br><div class='divider'></div><p>A skill game by <img id='sonicianova' src='company_logo.png' /></p><br><br><button class='menuButton' type='button' onclick='start()'>START</button><br><br><button class='menuButton' type='button' onclick='credits()'>CREDITS</button>");
+	replace("<img id='title' src='pta_title.png' /><br><br><div class='divider'></div><p>A skill game by <img id='sonicianova' src='company_logo.png' /></p><br><br><button class='menuButton' type='button' onclick='start()'>START</button><br><br><button class='menuButton' type='button' onclick='credits()'>OPTIONS</button>");
+}
+
+function options() {
+	replace("<img id='title' src='pta_title.png' /><br><br><div class='divider'></div>");
 }
 
 function begin() {
